@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Conversion Cost Analysis Knowledge Base
+    </title>
+
+    <meta name="description"
+        content="Conversion Cost Analysis dataset containing cost information by team, category, MS type, account and monthly amount.">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            color: #222;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #f5f5f5;
+        }
+
+        code {
+            background: #f3f3f3;
+            padding: 3px 6px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<h1>
+    Conversion Cost Analysis Knowledge Base
+</h1>
+
+
+<div class="section">
+
+<p>
+This knowledge base contains conversion cost data used for cost analysis.
+The dataset provides cost information by organizational team, cost category,
+MS type, account and monthly amount.
+</p>
+
+<p>
+The detailed dataset is available in:
+</p>
+
+<p>
+<a href="conversion_cost.csv">
+    conversion_cost.csv
+</a>
+</p>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Dataset Structure
+</h2>
+
+
+<table>
+
+<tr>
+<th>
+Column
+</th>
+
+<th>
+Description
+</th>
+
+</tr>
+
+
+<tr>
+<td>
+Team check
+</td>
+
+<td>
+The organizational team or business group responsible for the cost.
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+Category
+</td>
+
+<td>
+The high-level cost category.
+Examples include Labor, Material, Overhead or other cost groups.
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+MS type
+</td>
+
+<td>
+The detailed classification of cost type within each category.
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+Account name
+</td>
+
+<td>
+The detailed account or cost item name.
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+Year
+</td>
+
+<td>
+The fiscal year of the cost data.
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+Jan - Dec
+</td>
+
+<td>
+Monthly cost amount for each month.
+The value represents the cost amount recorded for that month.
+</td>
+
+</tr>
+
+
+</table>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+How to Query This Dataset
+</h2>
+
+
+<p>
+Users can ask questions by combining these dimensions:
+</p>
+
+
+<ul>
+
+<li>
+Team
+</li>
+
+<li>
+Category
+</li>
+
+<li>
+MS type
+</li>
+
+<li>
+Account name
+</li>
+
+<li>
+Year
+</li>
+
+<li>
+Month
+</li>
+
+</ul>
+
+
+<p>
+Example questions:
+</p>
+
+
+<ul>
+
+<li>
+What is the cost amount of EA/GA Labor category in January 2026?
+</li>
+
+
+<li>
+Show the monthly cost trend of Labor Cost Welfare.
+</li>
+
+
+<li>
+Compare cost between different teams.
+</li>
+
+
+<li>
+What is the total cost for a specific account in 2026?
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+<h2>
+Data Interpretation Rules
+</h2>
+
+
+<ul>
+
+<li>
+Each row represents one cost account record.
+</li>
+
+
+<li>
+Monthly columns represent the cost amount for that month.
+</li>
+
+
+<li>
+To find a specific value, filter by Team, Category, MS type, Account name and Year.
+</li>
+
+
+<li>
+The combination of Account name + Year + Month identifies a specific cost value.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+Dataset URL
+</h2>
+
+<p>
+<a href="conversion_cost.csv">
+Open Conversion Cost CSV Dataset
+</a>
+</p>
+
+</div>
+
+
+</body>
+
+</html>
